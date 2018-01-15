@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.linsh.code">
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:supportsRtl="false"
+        android:theme="@style/AppTheme">
+
+    </application>
+
+    <!--
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="false"                     // 是否支持从右到左的阅读习惯(如: 阿拉伯语、希伯来语等)
+                                                        // 需要在布局中配合 start & end 等属性, 一般不需要适配
+        android:theme="@style/AppTheme"/>
+    -->
+
+
+</manifest>
