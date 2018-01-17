@@ -40,12 +40,6 @@
         android:textSize="20sp"
         android:textStyle="normal"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="大神噶斗酒斯打打工"
-        android:textSize="23sp"/>
-
     <!--
     <TextView
         android:autoLink="web|email|phone"  // 是否识别为可点击的链接 (默认可点击, 可配合 linksClickable 使用)
