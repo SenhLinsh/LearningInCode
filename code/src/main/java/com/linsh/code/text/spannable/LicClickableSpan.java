@@ -12,7 +12,7 @@ import android.view.View;
  *    desc   :
  * </pre>
  */
-public class LkClickableSpan extends ClickableSpan {
+public class LicClickableSpan extends ClickableSpan {
 
     /**
      * 点击事件

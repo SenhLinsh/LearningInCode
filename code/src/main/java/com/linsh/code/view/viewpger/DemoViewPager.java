@@ -14,7 +14,7 @@ public class DemoViewPager {
 
     public void demo(ViewPager viewPager) {
         // 设置 Adapter
-        viewPager.setAdapter(new LshPagerAdapter());
+        viewPager.setAdapter(new LicPagerAdapter());
         // 设置当前选择的页面
         // 参数1: 指定页面的位置
         // 参数2: 是否平滑滚动至该页
@@ -24,10 +24,10 @@ public class DemoViewPager {
         viewPager.setOffscreenPageLimit(1);
 
         // 添加页面改变监听
-        viewPager.addOnPageChangeListener(new LshOnPageChangeListener());
+        viewPager.addOnPageChangeListener(new LicOnPageChangeListener());
         // 设置页面切换的效果(切换特效 duangduangduang 就看这里了)
-        viewPager.setPageTransformer(false, new LshPageTransformer());
-        viewPager.setPageTransformer(false, new LshPageTransformer(), 1);
+        viewPager.setPageTransformer(false, new LicPageTransformer());
+        viewPager.setPageTransformer(false, new LicPageTransformer(), 1);
     }
 
 }

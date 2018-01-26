@@ -12,7 +12,7 @@ import com.linsh.code.nothing.Way;
  * 传统的 PagerAdapter 在条目过多, 需要快速滑动的情况下, 会大量的生成和销毁 Item, 所以这种情况下需要自己设计缓存策略, 以保证性能.
  * JakeWharton 的 https://github.com/JakeWharton/salvage 中提供了不错的思路, 可以做到较好的缓存效果, 推荐在条目较多时使用.
  */
-class LshPagerAdapter extends PagerAdapter {
+public class LicPagerAdapter extends PagerAdapter {
 
     /**
      * 获取条目数
@@ -28,7 +28,7 @@ class LshPagerAdapter extends PagerAdapter {
      * 确认View与实例对象是否相互对应。ViewPager 内部用于获取 View 应的 ItemInfo
      *
      * @param view   ViewPager 显示的 View 内容
-     * @param object 在 {@link LshPagerAdapter#instantiateItem(ViewGroup, int)} 中提交给 ViewPager 进行保存的实例对象
+     * @param object 在 {@link LicPagerAdapter#instantiateItem(ViewGroup, int)} 中提交给 ViewPager 进行保存的实例对象
      * @return 是否相互对应
      */
     @Override
@@ -76,7 +76,7 @@ class LshPagerAdapter extends PagerAdapter {
      *
      * @param container ViewPager 本身
      * @param position  位置
-     * @param object    在 {@link LshPagerAdapter#instantiateItem(ViewGroup, int)} 中提交给 ViewPager 进行保存的实例对象
+     * @param object    在 {@link LicPagerAdapter#instantiateItem(ViewGroup, int)} 中提交给 ViewPager 进行保存的实例对象
      */
     @Override
     public void destroyItem(ViewGroup container, int position, Object object) {
@@ -92,7 +92,7 @@ class LshPagerAdapter extends PagerAdapter {
      *
      * @param container ViewPager 本身
      * @param position  给定的位置
-     * @param object    在 {@link LshPagerAdapter#instantiateItem(ViewGroup, int)} 中提交给 ViewPager 进行保存的实例对象
+     * @param object    在 {@link LicPagerAdapter#instantiateItem(ViewGroup, int)} 中提交给 ViewPager 进行保存的实例对象
      */
     @Override
     public void setPrimaryItem(ViewGroup container, int position, Object object) {
@@ -125,7 +125,7 @@ class LshPagerAdapter extends PagerAdapter {
      * POSITION_NONE : 给定项不再用于 PagerAdapter 中
      * 其他值: 可以根据具体的情况进行调整
      *
-     * @param object 在 {@link LshPagerAdapter#instantiateItem(ViewGroup, int)} 中提交给 ViewPager 进行保存的实例对象
+     * @param object 在 {@link LicPagerAdapter#instantiateItem(ViewGroup, int)} 中提交给 ViewPager 进行保存的实例对象
      * @return
      */
     @Override

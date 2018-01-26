@@ -3,7 +3,7 @@ package com.linsh.code.view.viewpger;
 import android.support.v4.view.ViewPager;
 import android.view.View;
 
-class LshPageTransformer implements ViewPager.PageTransformer {
+public class LicPageTransformer implements ViewPager.PageTransformer {
 
     /**
      * 设置 Page 的变化特效

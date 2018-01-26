@@ -2,7 +2,7 @@ package com.linsh.code.view.viewpger;
 
 import android.support.v4.view.ViewPager;
 
-class LshOnPageChangeListener implements ViewPager.OnPageChangeListener {
+public class LicOnPageChangeListener implements ViewPager.OnPageChangeListener {
 
     /**
      * 当前选择的 Page 滑动时的回调, 有多个 Page 但只记录当前选择的 Page

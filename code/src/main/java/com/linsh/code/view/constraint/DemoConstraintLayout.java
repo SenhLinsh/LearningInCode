@@ -14,5 +14,5 @@ public class DemoConstraintLayout {
 
     private int layout = R.layout.constraint_layout;        // ConstraintLayout XML 属性详解
 
-    private int layout2 = R.layout.constraint_layout_google; // 谷歌示例
+    private int layout2 = R.layout.constraint_layout_google; // 谷歌示例 https://github.com/googlecodelabs/constraint-layout
 }
