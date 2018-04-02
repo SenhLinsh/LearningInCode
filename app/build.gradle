@@ -19,6 +19,10 @@ android {
         versionName "1.0"       // 版本名称
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         // 还可以添加签名，占位符等等
+
+        ndk {
+            abiFilters "armeabi-v7a" // 指定 ndk 需要兼容的架构 (这样其他依赖包里 mips, x86, armeabi, arm-v8 之类的 so 会被过滤掉)
+        }
     }
 
     // 用来定义如何构建和打包不同类型的应用，常见的就是测试和生产
@@ -49,6 +53,12 @@ android {
             // 以下在 release 环境下生成对应的变量, 以和 debug 环境产生区别
             /*resValue "string", "app_name2", "LshKnowledge2"*/
             /*manifestPlaceholders = [app_name: "LshKnowledge1"]*/
+        }
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['src/main/jniLibs'] // 指定 jni 的 so 文件的目录
         }
     }
 
