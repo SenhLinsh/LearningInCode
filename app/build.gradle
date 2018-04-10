@@ -13,8 +13,8 @@ android {
     // 配置应用的默认属性，可以覆盖 AndroidManifest.xml 中的属性
     defaultConfig {
         applicationId "com.linsh.app"  // 覆盖了AndroidManifest中的package name (覆盖了应用唯一标识的属性)
-        minSdkVersion 15        // 配置运行应用的最小 API
-        targetSdkVersion 26     // 用于通知系统当前应用已经被这个版本测试过
+        minSdkVersion 16        // 配置运行应用的最小 API
+        targetSdkVersion 26     // 目标版本 / 运行版本, 代码运行时的目标版本, 如果使用的代码版本比目标版本高, 则会进行降版本处理, 表现为目标版本的特性
         versionCode 1           // 应用的版本号
         versionName "1.0"       // 版本名称
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
@@ -86,6 +86,7 @@ repositories {
         // 如果依赖的 Module 中存在 aar包, 需要在这里配置具体的 aar 路径, 否则会找不到
         dirs '../library/libs'
     }
+    mavenCentral()
 }
 
 /// 依赖传递 & 依赖排除 & 使用强制版本 的全局配置///
@@ -116,7 +117,7 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
 
     /// 依赖传递 & 依赖排除 & 使用强制版本 ///
-    implementation('com.android.support.constraint:constraint-layout:1.0.2') {
+    implementation('com.github.SenhLinsh:Utils-Everywhere:2.0.0') {
         // 依赖传递: 是否传递 Utils-Everywhere 中的依赖库, 默认为 true; false 为不依赖 Utils-Everywhere 中的依赖库
         transitive = true
         // 依赖排除: 不传递 Utils-Everywhere 中指定的依赖
@@ -134,6 +135,7 @@ dependencies {
     /*compile 'com.github.SenhLinsh:LshPercentLayout:+'*/
 
     implementation project(':code')
+    compile "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
 }
 
 /*
