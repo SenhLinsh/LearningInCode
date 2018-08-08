@@ -1,1 +1,18 @@
 include ':code', ':app'
+
+/*
+// 引用外部项目 (包含项目和模块)
+// module gradle 中: compile project(':LearningInCode:code')
+
+include ':LearningInCode'
+project(':LearningInCode').projectDir = new File('../LearningInCode/')
+include ':LearningInCode:code'
+*/
+
+/*
+// 引用外部项目中的模块 (只包含模块)
+// module gradle 中: compile project(':code')
+
+include ':code'
+project(':code').projectDir = new File('../LearningInCode/code')
+*/
