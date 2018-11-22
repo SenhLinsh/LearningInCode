@@ -28,7 +28,7 @@ import android.text.style.UnderlineSpan;
 import android.view.View;
 
 import com.linsh.code.R;
-import com.linsh.code.nothing.Getter;
+import com.linsh.code._.Getter;
 
 /**
  * <pre>
@@ -38,7 +38,7 @@ import com.linsh.code.nothing.Getter;
  *    desc   : 讲解
  * </pre>
  */
-public class DemoSpans {
+public class LearnUsingSpans {
 
     public static void demo() {
         // 字体大小

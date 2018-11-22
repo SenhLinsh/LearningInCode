@@ -6,7 +6,7 @@ import android.accessibilityservice.FingerprintGestureController;
 import android.annotation.TargetApi;
 import android.os.Build;
 
-import com.linsh.code.nothing.Getter;
+import com.linsh.code._.Getter;
 
 /**
  * <pre>
@@ -18,7 +18,7 @@ import com.linsh.code.nothing.Getter;
  *             注释参考: https://www.jianshu.com/p/ef01ce654302
  * </pre>
  */
-public class DemoAccessibilityService {
+public class LearnUsingAccessibilityService {
 
     public static void constant() {
         int global;

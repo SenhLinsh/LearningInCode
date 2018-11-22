@@ -10,7 +10,7 @@ import com.linsh.code.R;
  *    desc   :
  * </pre>
  */
-public class DemoConstraintLayout {
+public class LearnLayingOutConstraintLayout {
 
     private int layout = R.layout.constraint_layout;        // ConstraintLayout XML 属性详解
 

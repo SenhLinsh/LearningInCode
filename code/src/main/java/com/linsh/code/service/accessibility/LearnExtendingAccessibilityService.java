@@ -23,13 +23,13 @@ import java.util.List;
  *             注释参考自: https://www.jianshu.com/p/ef01ce654302
  * </pre>
  */
-public class LicAccessibilityService extends AccessibilityService {
+public class LearnExtendingAccessibilityService extends AccessibilityService {
 
     @Override
     public void onCreate() {
         super.onCreate();
-        //////////////////// AccessibilityService 的相关方法和解释, 详见 DemoAccessibilityService ////////////////////////
-        DemoAccessibilityService.demo(this);
+        //////////////////// AccessibilityService 的相关方法和解释, 详见 LearnUsingAccessibilityService ////////////////////////
+        LearnUsingAccessibilityService.demo(this);
     }
 
     /**
@@ -44,8 +44,8 @@ public class LicAccessibilityService extends AccessibilityService {
         if (info == null) info = new AccessibilityServiceInfo();
         // ... set something
         setServiceInfo(info);
-        ////////////////// AccessibilityServiceInfo 属性的设置详见 DemoAccessibilityServiceInfo //////////////////////
-        DemoAccessibilityServiceInfo.demo(info);
+        ////////////////// AccessibilityServiceInfo 属性的设置详见 LearnUsingAccessibilityServiceInfo //////////////////////
+        LearnUsingAccessibilityServiceInfo.demo(info);
     }
 
     /**
@@ -55,8 +55,8 @@ public class LicAccessibilityService extends AccessibilityService {
      */
     @Override
     public void onAccessibilityEvent(AccessibilityEvent event) {
-        //////////////////////// AccessibilityEvent 的相关使用方法, 详见 DemoAccessibilityEvent ///////////////////////
-        DemoAccessibilityEvent.demo(event);
+        //////////////////////// AccessibilityEvent 的相关使用方法, 详见 LearnUsingAccessibilityEvent ///////////////////////
+        LearnUsingAccessibilityEvent.demo(event);
 
         //================================================ 使用示范 ================================================//
         // 获取事件类型
@@ -81,7 +81,7 @@ public class LicAccessibilityService extends AccessibilityService {
         // 获取类名 (判断当前界面或内容)
         CharSequence className = event.getClassName();
         // 判断或打印事件的相关信息: 类型, 包名, 类名
-        Log.i("LicAccessibilityService", "onAccessibilityEvent: ");
+        Log.i("LearnExtendingAccessibilityService", "onAccessibilityEvent: ");
 
         // 通过以上的判断, 就可以有选择地获取想要的节点信息 (需要过滤指定类型/指定应用/指定界面)
         if (eventType == AccessibilityEvent.TYPE_WINDOW_STATE_CHANGED // 窗口发生变化, 如跳转到该界面
@@ -115,8 +115,8 @@ public class LicAccessibilityService extends AccessibilityService {
             }
             info.getBoundsInScreen(new Rect()); // 获取节点在屏幕中的位置
 
-            ///////////////// AccessibilityNodeInfo 相关方法和说明, 详见 DemoAccessibilityNodeInfo //////////////////////
-            DemoAccessibilityNodeInfo.demo(info);
+            ///////////////// AccessibilityNodeInfo 相关方法和说明, 详见 LearnUsingAccessibilityNodeInfo //////////////////////
+            LearnUsingAccessibilityNodeInfo.demo(info);
         }
     }
 

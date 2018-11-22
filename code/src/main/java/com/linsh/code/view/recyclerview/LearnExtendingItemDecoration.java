@@ -16,7 +16,7 @@ import android.view.View;
  *             3. 具体使用方法和细节可以参考 {@link android.support.v7.widget.DividerItemDecoration}(分割线)
  * </pre>
  */
-public class LicItemDecoration extends RecyclerView.ItemDecoration {
+public class LearnExtendingItemDecoration extends RecyclerView.ItemDecoration {
 
     /**
      * 在给定 Item 的上下左右插入偏移, 以腾出空间绘制 "装饰"

@@ -13,7 +13,7 @@ import android.text.style.ForegroundColorSpan;
  *    desc   :
  * </pre>
  */
-public class DemoSpannableString {
+public class LearnUsingSpannableString {
 
     public void demo(SpannableString string) {
         // 设置 Span

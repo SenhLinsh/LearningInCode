@@ -1,4 +1,4 @@
-package com.linsh.code;
+package com.linsh.code.build;
 
 public class LearnSettingModuleBuildGradle {
 }

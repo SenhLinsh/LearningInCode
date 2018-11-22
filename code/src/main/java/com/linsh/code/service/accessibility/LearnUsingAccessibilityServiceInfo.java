@@ -15,7 +15,7 @@ import com.linsh.code.R;
  *             注释参考自: https://www.jianshu.com/p/ef01ce654302
  * </pre>
  */
-public class DemoAccessibilityServiceInfo {
+public class LearnUsingAccessibilityServiceInfo {
 
     public static void demo(AccessibilityServiceInfo info) {
         // 设置 AccessibilityService 相关信息的配置, 可以在 xml 中配置或者 AccessibilityService 的 onServiceConnected() 中配置

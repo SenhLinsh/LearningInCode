@@ -4,7 +4,7 @@ import android.annotation.TargetApi;
 import android.os.Build;
 import android.view.accessibility.AccessibilityEvent;
 
-import com.linsh.code.nothing.Getter;
+import com.linsh.code._.Getter;
 
 /**
  * <pre>
@@ -17,7 +17,7 @@ import com.linsh.code.nothing.Getter;
  *             注释参考: https://www.jianshu.com/p/ef01ce654302
  * </pre>
  */
-public class DemoAccessibilityEvent {
+public class LearnUsingAccessibilityEvent {
 
     public static void constant() {
         int i = AccessibilityEvent.TYPE_WINDOW_STATE_CHANGED;

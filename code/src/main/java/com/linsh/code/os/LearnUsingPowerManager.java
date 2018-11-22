@@ -17,7 +17,7 @@ import android.support.annotation.RequiresPermission;
  *              https://www.aliyun.com/jiaocheng/13968.html?spm=5176.100033.1.24.BbCRhY
  * </pre>
  */
-public class DemoPowerManager {
+public class LearnUsingPowerManager {
 
     @RequiresPermission(Manifest.permission.WAKE_LOCK)
     public static void demo(Context context) {

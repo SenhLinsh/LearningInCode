@@ -24,7 +24,7 @@ import android.view.accessibility.AccessibilityEvent;
  *    desc   :
  * </pre>
  */
-public class LicActivity extends Activity {
+public class LearnExtendingActivity extends Activity {
 
     /**
      * 启动 Activity 时的回调, 用于处理大部分的初始化, 如调用 {@link #setContentView(int)} 来填充 UI 布局, 使用

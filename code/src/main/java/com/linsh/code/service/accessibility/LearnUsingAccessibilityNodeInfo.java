@@ -3,7 +3,7 @@ package com.linsh.code.service.accessibility;
 import android.os.Build;
 import android.view.accessibility.AccessibilityNodeInfo;
 
-import com.linsh.code.nothing.Getter;
+import com.linsh.code._.Getter;
 
 /**
  * <pre>
@@ -18,7 +18,7 @@ import com.linsh.code.nothing.Getter;
  *
  * </pre>
  */
-public class DemoAccessibilityNodeInfo {
+public class LearnUsingAccessibilityNodeInfo {
 
     public static void demo(AccessibilityNodeInfo info) {
         //================================================ 常量 ================================================//

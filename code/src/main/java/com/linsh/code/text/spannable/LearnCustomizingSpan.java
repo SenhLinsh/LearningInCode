@@ -15,7 +15,7 @@ import android.view.View;
  *    desc   :
  * </pre>
  */
-public class LicCustomSpan extends MetricAffectingSpan implements UpdateLayout, UpdateAppearance {
+public class LearnCustomizingSpan extends MetricAffectingSpan implements UpdateLayout, UpdateAppearance {
 
     /**
      * 点击事件, 需要配合 textView.setMovementMethod(LinkMovementMethod.getInstance())

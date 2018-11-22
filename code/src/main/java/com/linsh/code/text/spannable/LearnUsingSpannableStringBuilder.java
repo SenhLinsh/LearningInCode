@@ -16,7 +16,7 @@ import android.widget.TextView;
  *    desc   :
  * </pre>
  */
-public class DemoSpannableStringBuilder {
+public class LearnUsingSpannableStringBuilder {
 
     public void demo(SpannableStringBuilder builder) {
         // 追加文本

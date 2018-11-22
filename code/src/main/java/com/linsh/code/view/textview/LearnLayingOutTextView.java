@@ -10,7 +10,7 @@ import com.linsh.code.R;
  *    desc   :
  * </pre>
  */
-public class DemoTextView {
+public class LearnLayingOutTextView {
 
     private int layout = R.layout.text_view;
 }
