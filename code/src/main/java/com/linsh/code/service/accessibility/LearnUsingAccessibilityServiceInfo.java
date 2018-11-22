@@ -27,6 +27,6 @@ public class LearnUsingAccessibilityServiceInfo {
         info.packageNames = new String[]{"com.linshode"};
 
         // 相关属性和方法的解释和说明在 xml 配置文件中, 详见以下 ↓↓↓↓↓
-        int xml = R.xml.accessibility_service_config;
+        int xml = R.xml.learning_accessibility_service_config;
     }
 }

@@ -71,7 +71,7 @@ public class LearnExtendingAccessibilityService extends AccessibilityService {
                 break;
             default:
                 // 其他还有好多类型, 需要自己一一实现, 相关类型说明, 请见 xml 配置文件中 accessibilityEventTypes 的内容说明
-                int xml = R.xml.accessibility_service_config; // ←←←← 点击这里查看
+                int xml = R.xml.learning_accessibility_service_config; // ←←←← 点击这里查看
                 break;
         }
         // 将事件类型转为字符串方式

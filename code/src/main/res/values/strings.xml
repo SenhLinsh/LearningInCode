@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Lshknowledge</string>
+    <string name="learning_in_code">LearningInCode</string>
 
     <string name="singapore_description">Singapore officially the Republic of Singapore, and often referred to as the Lion City, the Garden City, and the Red Dot, is a global city in Southeast Asia and the world\'s only island city-state. It lies one degree (137 km) north of the equator, at the southernmost tip of continental Asia and peninsular Malaysia, with Indonesia\'s Riau Islands to the south. Singapore\'s territory consists of the diamond-shaped main island and 62 islets.</string>
     <string name="placeholder">Placeholder</string>s
@@ -11,6 +11,6 @@
     <string name="camera_value">Leica M Typ 240</string>
     <string name="singapore">Singapore</string>
 
-    <string name="accessibility_label">label of accessibility</string>
+    <string name="learning_accessibility_label">label of accessibility</string>
     <string name="accessibility_description">description of accessibility</string>
 </resources>

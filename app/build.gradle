@@ -121,13 +121,13 @@ repositories {
                                                                                     // ## 依赖传递 & 依赖排除 & 使用强制版本 的全局配置 ##
 configurations.all {
 
-    transitive = false                                                              // transitive = false 时, 表示全局关闭依赖传递, 即不再依赖该 Module 中依赖库中的依赖 (一般很少用)
+//    transitive = false                                                              // transitive = false 时, 表示全局关闭依赖传递, 即不再依赖该 Module 中依赖库中的依赖 (一般很少用)
 //    compile.exclude module: 'code'                                                  // 编译期排除依赖传递: 指定模块
-    all*.exclude group: 'com.android.support', module: 'appcompat-v7'               // 排除依赖传递: 指定库
+//    all*.exclude group: 'com.android.support', module: 'appcompat-v7'               // 排除依赖传递: 指定库
 
-    resolutionStrategy {                                                            // 使用强制版本: 冲突时优先使用该版本进行解决
-        force 'org.hamcrest:hamcrest-core:1.3'
-    }
+//    resolutionStrategy {                                                            // 使用强制版本: 冲突时优先使用该版本进行解决
+//        force 'org.hamcrest:hamcrest-core:1.3'
+//    }
 }
 
                                                                                     // ## dependencies ## 依赖配置
@@ -151,7 +151,7 @@ dependencies {
                                                                                     // 不推荐使用, 它会降低你系统构建的速度同时提高构建失败的风险
                                                                                     // 因为Gradle不得不每次检查远程仓库是否存在最新版本，同时新版本也可能带来无法预知的兼容性问题
 
-    runtimeOnly project(':code')                                                 // 依赖 Module
+    implementation project(':code')                                                 // 依赖 Module
 }
 
 //  ##### compile 和 implementation & api 的关系
