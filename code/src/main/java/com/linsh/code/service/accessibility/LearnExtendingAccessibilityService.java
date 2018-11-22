@@ -9,8 +9,6 @@ import android.util.Log;
 import android.view.accessibility.AccessibilityEvent;
 import android.view.accessibility.AccessibilityNodeInfo;
 
-import com.linsh.code.R;
-
 import java.util.List;
 
 /**
@@ -71,7 +69,7 @@ public class LearnExtendingAccessibilityService extends AccessibilityService {
                 break;
             default:
                 // 其他还有好多类型, 需要自己一一实现, 相关类型说明, 请见 xml 配置文件中 accessibilityEventTypes 的内容说明
-                int xml = R.xml.learning_accessibility_service_config; // ←←←← 点击这里查看
+                new com.linsh.code._.R.xml.accessibility_service_config(); // ←←←← 点击这里查看
                 break;
         }
         // 将事件类型转为字符串方式
@@ -81,7 +79,7 @@ public class LearnExtendingAccessibilityService extends AccessibilityService {
         // 获取类名 (判断当前界面或内容)
         CharSequence className = event.getClassName();
         // 判断或打印事件的相关信息: 类型, 包名, 类名
-        Log.i("LearnExtendingAccessibilityService", "onAccessibilityEvent: ");
+        Log.i("tag", "onAccessibilityEvent: ");
 
         // 通过以上的判断, 就可以有选择地获取想要的节点信息 (需要过滤指定类型/指定应用/指定界面)
         if (eventType == AccessibilityEvent.TYPE_WINDOW_STATE_CHANGED // 窗口发生变化, 如跳转到该界面

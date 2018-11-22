@@ -356,7 +356,7 @@ public class LearnExtendingActivity extends Activity {
      * <p>
      * <p>在你的 Activity 重新启动时, 你将立即在 onResume() 之前收到该回调.
      * <p>
-     * <p>如果 Activity 设置 {@link android.R.styleable#AndroidManifestActivity_noHistory} 为 true, 盖房将不再被调用.
+     * <p>如果 Activity 设置 {@link android.R.styleable#AndroidManifestActivity_noHistory} 为 true, 该方法将不再被调用.
      *
      * @param requestCode 请求码, 用于区分这个结果来源于谁
      * @param resultCode  结果码

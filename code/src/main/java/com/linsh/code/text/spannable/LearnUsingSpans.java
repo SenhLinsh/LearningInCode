@@ -27,7 +27,6 @@ import android.text.style.URLSpan;
 import android.text.style.UnderlineSpan;
 import android.view.View;
 
-import com.linsh.code.R;
 import com.linsh.code._.Getter;
 
 /**
@@ -264,7 +263,7 @@ public class LearnUsingSpans {
         // 参数3: 图片在竖直方向的对齐方式; [ALIGN_BOTTOM:底部对齐; ALIGN_BASELINE:基线对齐]
         ImageSpan imageSpan2 = new ImageSpan(Getter.context, Getter.bitmap, ImageSpan.ALIGN_BASELINE);
         ImageSpan imageSpan3 = new ImageSpan(Getter.drawable);
-        ImageSpan imageSpan4 = new ImageSpan(Getter.context, R.drawable.ic_launcher_test);
+        ImageSpan imageSpan4 = new ImageSpan(Getter.context, Getter._int);
         return null;
     }
 

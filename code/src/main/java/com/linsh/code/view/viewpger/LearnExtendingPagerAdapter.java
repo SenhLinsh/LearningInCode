@@ -4,7 +4,7 @@ import android.support.v4.view.PagerAdapter;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.linsh.code.R;
+import com.linsh.code._.Getter;
 import com.linsh.code._.Way;
 
 /**
@@ -59,7 +59,7 @@ public class LearnExtendingPagerAdapter extends PagerAdapter {
         switch (Way.ways()) {
             case 1:
                 // 在这里需要进行 View 的创建, 并主动添加到 container 中
-                View view = View.inflate(container.getContext(), R.layout.item, null);
+                View view = View.inflate(container.getContext(), Getter._int, null);
                 container.addView(view);
                 return view;
             case 2:
