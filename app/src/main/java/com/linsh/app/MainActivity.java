@@ -10,7 +10,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 //        setContentView(R.layout.activity_main);
-        setContentView(com.linsh.code.R.layout.constraint_layout);
     }
 
     public void onclick(View view) {
