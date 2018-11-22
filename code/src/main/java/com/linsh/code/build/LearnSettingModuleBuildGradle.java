@@ -161,11 +161,19 @@ dependencies {
     implementation project(':code')                                                 // 依赖 Module
 }
 
-
 //  ##### compile 和 implementation & api 的关系
 // AS 3.0 之后, compile 被标注为过时, 可用 api 指令代替. 同时尽量优先使用 implementation, 因为它会使编译速度有所增快
 // implementation 的不同在于它该依赖库所依赖的依赖库不再对外部公开, 即无法直接使用 LshUtils 里面的依赖库的类, 如: Gson, OkHttp 等
 // 目前使用的建议是: 优先使用 implementation, 如果有错，则使用 api 指令
+
+//    Gradle 2.X          Gradle 3.X
+//    apk                 runtimeOnly                   运行时依赖
+//    provided            compileOnly                   编译时依赖
+//    compile             api                           普通依赖
+//    没有对应             implementation                不传递依赖
+//    releaseCompile      releaseImplementation         release 模式依赖
+//    debugCompile        debugImplementation           debug 模式依赖
+//    androidTestCompile  androidTestImplementation     Android debug 模式依赖
 
 // ##### 依赖冲突 的解决:
 // 1. 依赖冲突时，如果有两个依赖引用了相同jar包的不同版本时，默认情况下 gradle 会采用最新版本的 jar包
