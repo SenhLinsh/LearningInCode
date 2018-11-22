@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.linsh.app">
+    package="com.linsh.app">
 
     <application
         android:allowBackup="true"
@@ -11,11 +11,40 @@
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
     </application>
+
+    <!--
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="false"                     // 是否支持从右到左的阅读习惯(如: 阿拉伯语、希伯来语等)
+                                                        // 需要在布局中配合 start & end 等属性, 一般不需要适配
+        android:theme="@style/AppTheme"/>
+    -->
+
+        <!--<service-->
+            <!--android:name=".service.accessibility.LearnExtendingAccessibilityService"-->
+            <!--android:enabled="true"-->
+            <!--android:exported="true"-->
+            <!--android:label="@string/learning_accessibility_label"-->
+            <!--android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">-->
+            <!--<intent-filter>-->
+                <!--<action android:name="android.accessibilityservice.AccessibilityService" />-->
+            <!--</intent-filter>-->
+
+            <!--<meta-data-->
+                <!--android:name="android.accessibilityservice"-->
+                <!--android:resource="@xml/learning_accessibility_service_config" />-->
+        <!--</service>-->
+
+    <!--</application>-->
+
 
 </manifest>

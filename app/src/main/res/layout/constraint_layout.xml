@@ -74,6 +74,7 @@
         app:layout_constraintTop_toTopOf="parent"               // 产生约束: 顶边和指定控件的顶边
         app:layout_constraintBottom_toBottomOf="parent"         // 产生约束: 底边和指定控件的底边
         app:layout_constraintBottom_toTopOf="@+id/guideline2"   // 产生约束: 底边和指定控件的顶边
+
         // 控制基线的约束
         app:layout_constraintBaseline_toBaselineOf="parent"     // 产生约束: 基线和指定控件的基线
 

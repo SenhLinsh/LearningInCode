@@ -8,4 +8,10 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="TextAppearance_Test">
+        <item name="android:textColor">@color/selector_test</item>
+        <item name="android:textColorLink">#FF4081</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
 </resources>

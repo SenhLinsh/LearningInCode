@@ -5,11 +5,8 @@ android {
     compileSdkVersion 26
 
     defaultConfig {
-        minSdkVersion 16
+        minSdkVersion 15
         targetSdkVersion 26
-        versionCode 1
-        versionName "1.0"
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
 
     /////// 以下为配置 library 注释在打包jar后保留 /////////

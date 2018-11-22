@@ -136,6 +136,7 @@ dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')                        // 遍历引用 libs 下面的 jar 包
 
     implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:2.0.0-alpha2'
     testImplementation 'junit:junit:4.12'                                           // 单元测试 ( test 环境下使用)
 
 //    implementation('com.github.SenhLinsh:Utils-Everywhere:2.0.0') {
